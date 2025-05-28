@@ -1,38 +1,155 @@
-# Hand Motion Control Game
+# Hand Motion Control Game 🎮🖐️
 
-## Anggota Kelompok
-| Nama Lengkap       | NIM       | ID GitHub                                   |
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
+[![OpenCV](https://img.shields.io/badge/OpenCV-4.x-green)](https://opencv.org/)
+[![MediaPipe](https://img.shields.io/badge/MediaPipe-0.8.x-orange)](https://google.github.io/mediapipe/)
+
+---
+
+## 📌 Tentang Proyek
+
+**Hand Motion Control Game** adalah sebuah permainan interaktif berbasis pengenalan gesture tangan secara real-time menggunakan webcam.  
+Permainan ini menggabungkan teknologi pengolahan citra dari **MediaPipe**, **OpenCV**, dan pemrograman multimedia Python untuk menghadirkan pengalaman bermain yang unik dan edukatif.
+
+Proyek ini dibuat sebagai tugas akhir mata kuliah Sistem / Teknologi Multimedia (IF4021) di Program Studi Teknik Informatika ITERA 2024/2025.
+
+---
+
+## 🎯 Fitur Utama
+
+- 🎥 Deteksi gesture tangan secara real-time menggunakan webcam.
+- ✋ Kendali permainan menggunakan pose tangan seperti Open Hand, Peace, Metal, Fist, dan Pointing.
+- 🚧 Rintangan bergerak diagonal yang harus dikoreksi dengan gesture yang benar.
+- 🎵 Audio feedback untuk berbagai aksi, seperti sukses, peringatan, dan game over.
+- 🎮 Gameplay yang menantang dengan sistem retry saat gesture salah.
+- 🖼️ Tampilan grafis dengan efek glow pada rintangan dan animasi interaktif.
+
+---
+
+## 🚀 Demo Screenshot
+
+![Screenshot Gameplay](link-gambar-screenshot.jpg)  
+*Gambar di atas adalah contoh tampilan permainan saat dijalankan.*
+
+---
+
+## 🛠️ Instalasi dan Persiapan
+
+1. **Clone repository ini:**
+
+    ```bash
+    git clone https://github.com/ericsonchandra99/Hand_Motion_Control_Game.git
+    cd Hand_Motion_Control_Game
+    ```
+
+2. **Buat virtual environment (opsional tapi disarankan):**
+
+    ```bash
+    python -m venv venv
+    source venv/bin/activate   # Linux/Mac
+    venv\Scripts\activate      # Windows
+    ```
+
+3. **Install dependencies:**
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+    Jika belum ada `requirements.txt`, kamu bisa buat dengan isi seperti ini:
+
+    ```
+    opencv-python
+    mediapipe
+    numpy
+    pillow
+    playsound; platform_system!="Windows"
+    ```
+
+4. **Jalankan game:**
+
+    ```bash
+    python main.py
+    ```
+
+---
+
+## 📖 Cara Bermain
+
+- Saat permainan berjalan, kamu akan melihat rintangan dengan simbol gesture tertentu bergerak secara diagonal.
+- Tempatkan tangan kamu dalam zona deteksi yang ditandai kotak berwarna oranye.
+- Tunjukkan pose tangan yang sesuai dengan simbol rintangan saat rintangan masuk zona deteksi.
+- Jika pose benar, kamu akan mendapat poin dan rintangan hilang.
+- Jika salah, kamu harus mengoreksi pose sebelum rintangan bergerak keluar zona.
+- Game berakhir saat gagal melewati rintangan atau gagal koreksi pose.
+
+---
+
+## 🧩 Struktur Kode Utama
+
+- **`main.py`** — Program utama yang menjalankan game dan webcam.
+- Fungsi `detect_gesture()` — Mendeteksi pose tangan berdasarkan landmark MediaPipe.
+- Fungsi `create_obstacle()` — Membuat rintangan baru dengan gesture acak.
+- Fungsi `draw_pose_obstacle()` — Menggambar rintangan dengan efek glow dan emoji.
+- Game loop mengelola pergerakan rintangan, pengecekan gesture, skor, dan status game.
+
+---
+
+## ⚙️ Penjelasan Teknologi
+
+| Teknologi    | Deskripsi                                   |
+|--------------|---------------------------------------------|
+| OpenCV       | Pengolahan video dan gambar secara real-time|
+| MediaPipe    | Library deteksi pose dan landmark tangan     |
+| Pillow (PIL) | Menggambar emoji di atas frame video          |
+| winsound/playsound | Mengeluarkan suara feedback sesuai aksi |
+
+---
+
+## 📂 Struktur Folder
+
+
+
+---
+
+## 👥 Anggota Kelompok
+
+| Nama Lengkap       | NIM       | GitHub                                      |
 |--------------------|-----------|---------------------------------------------|
-| Ericson Chandra    | 121450026 | https://github.com/ericsonchandra99  |
-| Nama Anggota 2     | 121450087 | [github.com/username2](https://github.com/username2) |
-| Kharisma Gumilang  | 121450142 | https://github.com/gumilangkharismaa |
+| Ericson Chandra    | 121450026 | [ericsonchandra99](https://github.com/ericsonchandra99)  |
+| Nama Anggota 2     | 121450087 | [username2](https://github.com/username2)   |
+| Kharisma Gumilang  | 121450142 | [gumilangkharismaa](https://github.com/gumilangkharismaa) |
 
 ---
 
-## Deskripsi Proyek
+## 📞 Kontak
 
-Proyek ini adalah implementasi **Hand Motion Control Game** yang menggunakan input gerakan tangan dari webcam secara real-time untuk mengendalikan elemen dalam permainan. Program ditulis dalam Python dan mengaplikasikan konsep multimedia pengolahan video dan audio.
-
-Fitur utama program mencakup deteksi gesture tangan, kontrol interaktif dalam game, serta perekaman video hasil permainan lengkap dengan suara. Program juga dirancang dengan prinsip clean code untuk memudahkan pengembangan dan pemeliharaan.
-
-Proyek ini dibuat sebagai bagian dari Mata Kuliah Sistem / Teknologi Multimedia (IF4021) di Program Studi Teknik Informatika ITERA tahun ajaran 2024/2025.
+- Ericson Chandra: [github.com/ericsonchandra99](https://github.com/ericsonchandra99)
+- Kharisma Gumilang: [github.com/gumilangkharismaa](https://github.com/gumilangkharismaa)
 
 ---
 
-## Fitur
+## Lisensi
 
-- Deteksi dan pelacakan gerakan tangan secara real-time
-- Kontrol game berbasis gesture tangan pengguna
-- Rekaman video permainan dengan audio
-- Tampilan hasil proses secara langsung (real-time)
-- Kode terstruktur dan terdokumentasi dengan baik
+MIT License © 2025 Hand Motion Control Game
 
 ---
 
-## Cara Instalasi
+### Tips agar repo kamu menarik:
 
-1. Clone repository:
+- **Tambahkan screenshot/gif video gameplay** ke folder `assets` dan tampilkan di README.
+- Buat `requirements.txt` agar mudah instalasi.
+- Buat file `main.py` (atau sesuai nama file kamu) untuk memisahkan kode utama.
+- Jangan letakkan seluruh kode di README, cukup berikan ringkasan & instruksi.
+- Gunakan badge dari [shields.io](https://shields.io/) untuk mempercantik README.
+- Dokumentasikan fungsi utama dengan komentar di kode.
 
-```bash
-git clone https://github.com/ericsonchandra99/Hand_Motion_Control_Game.git
-cd Hand_Motion_Control_Game
+---
+
+Kalau kamu mau, saya juga bisa bantu buatkan `requirements.txt` dan contoh struktur folder lengkap, serta bantu pisahkan kode kamu ke file terpisah.
+
+---
+
+Kalau ingin saya buatkan versi README lengkap siap upload ke GitHub, tinggal bilang ya!
+
+
