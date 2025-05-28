@@ -5,7 +5,7 @@
 |--------------------|-----------|---------------------------------------------|
 | Nama Anggota 1     | 121450026 | [github.com/username1](https://github.com/username1) |
 | Nama Anggota 2     | 121450087 | [github.com/username2](https://github.com/username2) |
-| Nama Anggota 3     | 121450142 | [github.com/username3](https://github.com/username3) |
+| Kharisma Gumilang  | 121450142 | https://github.com/gumilangkharismaa |
 
 ---
 
