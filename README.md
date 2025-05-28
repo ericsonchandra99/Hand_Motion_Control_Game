@@ -1,4 +1,4 @@
-# Hand_Motion_Control_Game
+# Hand Motion Control Game
 
 ## 121450026
 ## 121450087
