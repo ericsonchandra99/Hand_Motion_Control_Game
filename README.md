@@ -3,7 +3,7 @@
 ## Anggota Kelompok
 | Nama Lengkap       | NIM       | ID GitHub                                   |
 |--------------------|-----------|---------------------------------------------|
-| Nama Anggota 1     | 121450026 | [github.com/username1](https://github.com/username1) |
+| Ericson Chandra    | 121450026 | https://github.com/ericsonchandra99  |
 | Nama Anggota 2     | 121450087 | [github.com/username2](https://github.com/username2) |
 | Kharisma Gumilang  | 121450142 | https://github.com/gumilangkharismaa |
 
