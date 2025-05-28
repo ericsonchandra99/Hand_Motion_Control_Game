@@ -34,5 +34,5 @@ Proyek ini dibuat sebagai bagian dari Mata Kuliah Sistem / Teknologi Multimedia 
 1. Clone repository:
 
 ```bash
-git clone https://github.com/username/repo-hand-motion-game.git
-cd repo-hand-motion-game
+git clone https://github.com/ericsonchandra99/Hand_Motion_Control_Game.git
+cd Hand_Motion_Control_Game
