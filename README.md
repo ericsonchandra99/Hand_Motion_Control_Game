@@ -129,27 +129,4 @@ Proyek ini dibuat sebagai tugas akhir mata kuliah Sistem / Teknologi Multimedia 
 
 ---
 
-## Lisensi
-
-MIT License © 2025 Hand Motion Control Game
-
----
-
-### Tips agar repo kamu menarik:
-
-- **Tambahkan screenshot/gif video gameplay** ke folder `assets` dan tampilkan di README.
-- Buat `requirements.txt` agar mudah instalasi.
-- Buat file `main.py` (atau sesuai nama file kamu) untuk memisahkan kode utama.
-- Jangan letakkan seluruh kode di README, cukup berikan ringkasan & instruksi.
-- Gunakan badge dari [shields.io](https://shields.io/) untuk mempercantik README.
-- Dokumentasikan fungsi utama dengan komentar di kode.
-
----
-
-Kalau kamu mau, saya juga bisa bantu buatkan `requirements.txt` dan contoh struktur folder lengkap, serta bantu pisahkan kode kamu ke file terpisah.
-
----
-
-Kalau ingin saya buatkan versi README lengkap siap upload ke GitHub, tinggal bilang ya!
-
 
