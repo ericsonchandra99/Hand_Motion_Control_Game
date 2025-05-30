@@ -35,7 +35,6 @@ def initialize_pygame_audio():
 def load_emoji_font(size):
     """
     Memuat font yang mendukung emoji berdasarkan sistem operasi.
-    Jika tidak ditemukan, lempar FileNotFoundError.
     """
     system = platform.system()
     
@@ -48,9 +47,9 @@ def load_emoji_font(size):
     elif system == "Darwin":  # macOS
         # Cari font emoji alternatif di macOS
         possible_paths = [
-            "/System/Library/Fonts/Apple Color Emoji.ttc",
             "/System/Library/Fonts/Supplemental/Arial Unicode.ttf",
-            "/System/Library/Fonts/Supplemental/Apple Symbols.ttf"
+            "/System/Library/Fonts/Supplemental/Apple Symbols.ttf",
+            "/System/Library/Fonts/Apple Color Emoji.ttc"
         ]
         path = None
         for p in possible_paths:
@@ -68,12 +67,16 @@ def load_emoji_font(size):
     
     return ImageFont.truetype(path, size)
 
-# Load emoji font dengan fallback
+OBSTACLE_SIZE = 10
+
 try:
-    emoji_font = load_emoji_font(48)
+    font_size = max(12, int(OBSTACLE_SIZE * 0.7))  # Ukuran font minimal 12px
+    print(f"Muat emoji font dengan ukuran: {font_size}")
+    emoji_font = load_emoji_font(font_size)
 except Exception as e:
     print(f"Gagal load emoji font: {e}\nMenggunakan default font (emoji bisa tidak muncul).")
     emoji_font = ImageFont.load_default()
+
 
 # =========================
 # CONSTANTS & GLOBALS
