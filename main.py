@@ -32,16 +32,21 @@ def initialize_pygame_audio():
     pygame.mixer.music.set_volume(0.3)
     return sounds
 
-def load_emoji_font(size: int):
-    """Load font emoji dengan fallback default jika font tidak ditemukan."""
-    try:
-        if platform.system() == "Windows":
-            font_path = "C:/Windows/Fonts/seguiemj.ttf"
-        else:
-            font_path = "/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf"
-        return ImageFont.truetype(font_path, size)
-    except Exception:
-        return ImageFont.load_default()
+def load_emoji_font(size):
+    if platform.system() == "Linux":
+        path = "/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf"
+    elif platform.system() == "Windows":
+        path = "C:\\Windows\\Fonts\\seguiemj.ttf"
+    elif platform.system() == "Darwin":
+        path = "/System/Library/Fonts/Apple Color Emoji.ttc"
+    else:
+        raise Exception("Unsupported OS")
+
+    if not os.path.exists(path):
+        raise FileNotFoundError(f"Font not found: {path}")
+    return ImageFont.truetype(path, size)
+
+emoji_font = load_emoji_font(48)
 
 # =========================
 # CONSTANTS & GLOBALS
