@@ -32,50 +32,18 @@ def initialize_pygame_audio():
     pygame.mixer.music.set_volume(0.3)
     return sounds
 
-def load_emoji_font(size):
-    """
-    Memuat font yang mendukung emoji berdasarkan sistem operasi.
-    """
-    system = platform.system()
-    
-    if system == "Linux":
-        path = "/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf"
-
-    elif system == "Windows":
-        path = "C:\\Windows\\Fonts\\seguiemj.ttf"
-
-    elif system == "Darwin":  # macOS
-        # Cari font emoji alternatif di macOS
-        possible_paths = [
-            "/System/Library/Fonts/Supplemental/Arial Unicode.ttf",
-            "/System/Library/Fonts/Supplemental/Apple Symbols.ttf",
-            "/System/Library/Fonts/Apple Color Emoji.ttc"
-        ]
-        path = None
-        for p in possible_paths:
-            if os.path.exists(p):
-                path = p
-                break
-        if path is None:
-            raise FileNotFoundError("No suitable emoji font found on macOS.")
-
-    else:
-        raise Exception(f"Unsupported operating system: {system}")
-
-    if not os.path.exists(path):
-        raise FileNotFoundError(f"Font not found at: {path}")
-    
-    return ImageFont.truetype(path, size)
-
-OBSTACLE_SIZE = 10
-
-try:
-    font_size = max(12, int(OBSTACLE_SIZE * 0.7))  # Ukuran font minimal 12px
-    print(f"Muat emoji font dengan ukuran: {font_size}")
-    emoji_font = load_emoji_font(font_size)
-except Exception as e:
-    print(f"Gagal load emoji font: {e}\nMenggunakan default font (emoji bisa tidak muncul).")
-    emoji_font = ImageFont.load_default()
+def load_emoji_font(size: int):
+    try:
+        system = platform.system()
+        if system == "Windows":
+            font_path = "C:/Windows/Fonts/seguiemj.ttf"
+        elif system == "Darwin":  # macOS
+            font_path = "/System/Library/Fonts/Apple Color Emoji.ttc"
+        else:  # Linux
+            font_path = "/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf"
+        return ImageFont.truetype(font_path, size)
+    except Exception:
+        return ImageFont.load_default()
 
 
 # =========================
