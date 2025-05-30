@@ -92,8 +92,6 @@ Proyek ini dibuat sebagai tugas akhir mata kuliah Sistem / Teknologi Multimedia 
 | OpenCV       | Pengolahan video dan gambar secara real-time|
 | MediaPipe    | Library deteksi pose dan landmark tangan     |
 | Pillow (PIL) | Menggambar emoji di atas frame video          |
-| winsound/playsound | Mengeluarkan suara feedback sesuai aksi |
-
 ---
 
 ## 📂 Struktur Folder
