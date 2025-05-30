@@ -33,20 +33,47 @@ def initialize_pygame_audio():
     return sounds
 
 def load_emoji_font(size):
-    if platform.system() == "Linux":
+    """
+    Memuat font yang mendukung emoji berdasarkan sistem operasi.
+    Jika tidak ditemukan, lempar FileNotFoundError.
+    """
+    system = platform.system()
+    
+    if system == "Linux":
         path = "/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf"
-    elif platform.system() == "Windows":
+
+    elif system == "Windows":
         path = "C:\\Windows\\Fonts\\seguiemj.ttf"
-    elif platform.system() == "Darwin":
-        path = "/System/Library/Fonts/Apple Color Emoji.ttc"
+
+    elif system == "Darwin":  # macOS
+        # Cari font emoji alternatif di macOS
+        possible_paths = [
+            "/System/Library/Fonts/Apple Color Emoji.ttc",
+            "/System/Library/Fonts/Supplemental/Arial Unicode.ttf",
+            "/System/Library/Fonts/Supplemental/Apple Symbols.ttf"
+        ]
+        path = None
+        for p in possible_paths:
+            if os.path.exists(p):
+                path = p
+                break
+        if path is None:
+            raise FileNotFoundError("No suitable emoji font found on macOS.")
+
     else:
-        raise Exception("Unsupported OS")
+        raise Exception(f"Unsupported operating system: {system}")
 
     if not os.path.exists(path):
-        raise FileNotFoundError(f"Font not found: {path}")
+        raise FileNotFoundError(f"Font not found at: {path}")
+    
     return ImageFont.truetype(path, size)
 
-emoji_font = load_emoji_font(48)
+# Load emoji font dengan fallback
+try:
+    emoji_font = load_emoji_font(48)
+except Exception as e:
+    print(f"Gagal load emoji font: {e}\nMenggunakan default font (emoji bisa tidak muncul).")
+    emoji_font = ImageFont.load_default()
 
 # =========================
 # CONSTANTS & GLOBALS
