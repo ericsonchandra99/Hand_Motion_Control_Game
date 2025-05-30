@@ -62,8 +62,8 @@ Proyek ini dibuat sebagai tugas akhir mata kuliah Sistem / Teknologi Multimedia 
     opencv-python
     mediapipe
     numpy
-    pillow
-    playsound; platform_system!="Windows"
+    pygame
+    Pillow
     ```
 
 4. **Jalankan game:**
