@@ -56,16 +56,6 @@ Proyek ini dibuat sebagai tugas akhir mata kuliah Sistem / Teknologi Multimedia 
     pip install -r requirements.txt
     ```
 
-    Jika belum ada `requirements.txt`, kamu bisa buat dengan isi seperti ini:
-
-    ```
-    opencv-python
-    mediapipe
-    numpy
-    pygame
-    Pillow
-    ```
-
 4. **Jalankan game:**
 
     ```bash
