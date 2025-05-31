@@ -127,10 +127,10 @@ Ini adalah tampilan saat permainan sedang berjalan. Terlihat pose tangan yang ha
 Tampilan ini muncul saat permainan berakhir karena pemain gagal menyesuaikan pose tangan dengan obstacle pada zona deteksi. Layar menampilkan pesan "GAME OVER" yang mencolok, disertai skor akhir yang diraih pemain. Tampilan ini memberikan feedback langsung kepada pemain sebelum permainan selesai atau di-restart.
 
 ---
-## 
+##  4. Cara main ('panduan.png')
 Gambar "Cara Main" ini ditempatkan di README.md untuk memberikan panduan singkat dan jelas mengenai cara berinteraksi dengan aplikasi. Ini membantu pengguna baru memahami aturan dasar dan alur permainan secara cepat sebelum atau saat mereka mencoba aplikasi, memastikan pengalaman pengguna yang lebih baik dan mengurangi kebingungan.
 
-![Game Over](./gameover.png)
+![Cara Main](./panduan.jpg)
 
 ---
 
