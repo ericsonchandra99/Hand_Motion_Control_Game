@@ -104,6 +104,38 @@ Proyek ini dibuat sebagai tugas akhir mata kuliah Sistem / Teknologi Multimedia 
 
 ## 📂 Struktur Folder
 
+# Dokumentasi Tampilan Game Pose Tangan
+
+Berikut ini adalah penjelasan dari beberapa tampilan utama dalam game pose tangan:
+
+---
+
+## 1. Tampilan Home Screen (`homescreen.png`)
+
+![Home Screen](./homescreen.png)
+
+Tampilan awal permainan yang menjadi muka utama game. Pada layar ini terdapat tombol untuk memulai permainan, serta informasi singkat mengenai kontrol pose tangan yang digunakan. Desainnya dibuat sederhana dan menarik untuk memudahkan pengguna memulai permainan dengan cepat.
+
+---
+
+## 2. Tampilan In-Game (`ingame.png`)
+
+![In-Game](./ingame.png)
+
+Ini adalah tampilan saat permainan sedang berjalan. Terlihat pose tangan yang harus ditebak oleh pemain sebagai obstacle yang bergerak dari kiri ke kanan. Pada bagian atas kiri layar, terdapat skor yang terus bertambah setiap pemain berhasil mengenali pose dengan benar. Zona deteksi (garis hijau vertikal) menunjukkan area dimana pose tangan akan dicek dan dibandingkan dengan obstacle.
+
+---
+
+## 3. Tampilan Game Over (`gameover.png`)
+
+![Game Over](./gameover.png)
+
+Tampilan ini muncul saat permainan berakhir karena pemain gagal menyesuaikan pose tangan dengan obstacle pada zona deteksi. Layar menampilkan pesan "GAME OVER" yang mencolok, disertai skor akhir yang diraih pemain. Tampilan ini memberikan feedback langsung kepada pemain sebelum permainan selesai atau di-restart.
+
+---
+
+> Penjelasan di atas membantu memberikan gambaran visual dan fungsional dari tiap tahapan permainan pose tangan yang interaktif dan edukatif.
+
 
 
 ---
