@@ -130,7 +130,11 @@ Tampilan ini muncul saat permainan berakhir karena pemain gagal menyesuaikan pos
 
 > Penjelasan di atas membantu memberikan gambaran visual dan fungsional dari tiap tahapan permainan pose tangan yang interaktif dan edukatif.
 
-
+---
+Referensi:
+Suara: (https://pixabay.com/)
+Gambar: (https://www.pngegg.com/id/png-yvuzc)
+YouTube: (https://youtu.be/SzebIgHlSSE?si=7xzPNfvHpuZJ9u7E)
 
 ---
 
@@ -139,7 +143,7 @@ Tampilan ini muncul saat permainan berakhir karena pemain gagal menyesuaikan pos
 | Nama Lengkap       | NIM       | GitHub                                      |
 |--------------------|-----------|---------------------------------------------|
 | Ericson Chandra    | 121450026 | [ericsonchandra99](https://github.com/ericsonchandra99)  |
-| Nama Anggota 2     | 121450087 | [username2](https://github.com/username2)   |
+| Shula Talitha      | 121450087 | [shulatalitha1](https://github.com/shulatalitha1)   |
 | Kharisma Gumilang  | 121450142 | [gumilangkharismaa](https://github.com/gumilangkharismaa) |
 
 ---
@@ -147,8 +151,10 @@ Tampilan ini muncul saat permainan berakhir karena pemain gagal menyesuaikan pos
 ## 📞 Kontak
 
 - Ericson Chandra: [github.com/ericsonchandra99](https://github.com/ericsonchandra99)
+
 - Kharisma Gumilang: [github.com/gumilangkharismaa](https://github.com/gumilangkharismaa)
 
+- Shula Talitha: [github.com/shulatalitha1](https://github.com/shulatalitha1)
 ---
 
 
