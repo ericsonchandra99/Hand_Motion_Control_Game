@@ -132,9 +132,9 @@ Tampilan ini muncul saat permainan berakhir karena pemain gagal menyesuaikan pos
 
 ---
 Referensi:
-Suara: (https://pixabay.com/)
-Gambar: (https://www.pngegg.com/id/png-yvuzc)
-YouTube: (https://youtu.be/SzebIgHlSSE?si=7xzPNfvHpuZJ9u7E)
+- Suara: (https://pixabay.com/)
+- Gambar: (https://www.pngegg.com/id/png-yvuzc)
+- YouTube: (https://youtu.be/SzebIgHlSSE?si=7xzPNfvHpuZJ9u7E)
 
 ---
 
