@@ -34,11 +34,6 @@ Proyek ini dibuat sebagai tugas akhir mata kuliah Sistem / Teknologi Multimedia 
 
 ---
 
-## 🚀 Demo Screenshot
-
-![Screenshot Gameplay](link-gambar-screenshot.jpg)  
-*Gambar di atas adalah contoh tampilan permainan saat dijalankan.*
-
 ---
 
 ## 🛠️ Instalasi dan Persiapan
