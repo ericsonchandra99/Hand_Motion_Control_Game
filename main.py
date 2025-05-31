@@ -208,7 +208,7 @@ def detect_gesture(landmarks):
         return landmarks[tip_idx].y < landmarks[pip_idx].y + 0.02
 
     def is_finger_bent(tip_idx, pip_idx):
-        return landmarks[tip_idx].y > landmarks[pip_idx].y - 0.05
+        return landmarks[tip_idx].y > landmarks[pip_idx].y - 0.08
 
     # cek ibu jari terbuka secara umum
     def is_thumb_open_general():
@@ -264,8 +264,9 @@ def detect_gesture(landmarks):
         is_finger_bent(finger_tips[3], finger_pips[3]) and
         is_finger_bent(finger_tips[4], finger_pips[4])
     )
-    if all_fingers_bent and not is_thumb_open_general():
+    if all_fingers_bent:
         return "Fist ✊"
+
 
     return "Unknown"  # kalau gesture tidak dikenali
 
