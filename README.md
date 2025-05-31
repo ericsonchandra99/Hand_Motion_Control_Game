@@ -5,6 +5,14 @@
 [![MediaPipe](https://img.shields.io/badge/MediaPipe-0.8.x-orange)](https://google.github.io/mediapipe/)
 
 ---
+TIM : Ericson Chandra Sihombing(121450026)
+---
+Kharisma Gumilang(121450142)
+---
+Shula Talitha Ardhya Putri (121450087)
+---
+
+---
 
 ## 📌 Tentang Proyek
 
