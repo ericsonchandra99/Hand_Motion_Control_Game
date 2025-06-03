@@ -23,6 +23,13 @@ Proyek ini dibuat sebagai tugas akhir mata kuliah Sistem / Teknologi Multimedia 
 
 ---
 
+## 🎥 Demo Video Hand Motion Control Game
+
+Klik thumbnail di bawah ini untuk menonton video demo:
+
+[![Watch the video](https://img.youtube.com/vi/BA90UzL1X-8/0.jpg)](https://www.youtube.com/watch?v=BA90UzL1X-8)
+
+
 ## 🎯 Fitur Utama
 
 - 🎥 Deteksi gesture tangan secara real-time menggunakan webcam.
